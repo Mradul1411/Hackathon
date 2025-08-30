@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login as passenger</title>
+
+    <style>
+        body{
+            background-color: rgb(249, 232, 210);
+        }
+    </style>
+</head>
+<body>
+    <H1>Enter your Credentials</H1>
+    <input type="text" id="username" placeholder="Enter Username">
+    
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter Password">
+     <button type="button" id="toggleBtn">Show</button>
+
+  <script>
+    const passwordField = document.getElementById("password");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    toggleBtn.addEventListener("click", () => {
+      if (passwordField.type === "password") {
+        passwordField.type = "text";      // show password
+        toggleBtn.textContent = "Hide";   // change button text
+      } else {
+        passwordField.type = "password";  // hide password
+        toggleBtn.textContent = "Show";   // change back
+      }
+    });
+  </script>
+  </script>
+</body>
+</html>
