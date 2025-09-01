@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RidePulse - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-section:hover .login-card {
+            filter: blur(2px);
+        }
+
+        .login-section .login-card:hover {
+            transform: scale(1.05);
+            filter: blur(0);
+        }
+        :root {
+            --charcoal: #36454F;
+            --dark-teal: #008080;
+            --silver: #C0C0C0;
+            --unified-bg: #2c2f30;
+            --unified-bg-hover: #333637;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-900">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+             <div class="flex items-center gap-3">
+                <span class="brand-text text-3xl font-bold tracking-tighter text-white">Ride<span
+                        class="text-[var(--dark-teal)]">Pulse</span></span>
+            </div>
+            <nav class="flex items-center space-x-8">
+                <a class="hover:text-teal-400" href="#">Home</a>
+                <a class="hover:text-teal-400" href="#">About</a>
+                <a class="hover:text-teal-400" href="#">Contact Us</a>
+                <a class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg" href="#">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero bg-gray-800 text-center py-20">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-bold mb-4">Your Journey, Simplified.</h1>
+                <p class="text-xl mb-8">Track your bus, manage your pass, and stay informed. All in one place.</p>
+                <div class="flex justify-center space-x-4">
+                    <a class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg"
+                        href="#passenger">I'm a Passenger</a>
+                    <a class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg"
+                        href="#driver">I'm a Driver</a>
+                </div>
+            </div>
+        </section>
+        <section class="py-20" id="features">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Features for Everyone</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-lg text-center">
+                        <span class="material-icons text-teal-400 text-5xl mb-4">qr_code_scanner</span>
+                        <h3 class="text-2xl font-bold mb-2">Digital Bus Passes</h3>
+                        <p class="text-gray-400">No more paper tickets. Get your pass as a QR code on your phone.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg text-center">
+                        <span class="material-icons text-teal-400 text-5xl mb-4">location_on</span>
+                        <h3 class="text-2xl font-bold mb-2">Real-Time Tracking</h3>
+                        <p class="text-gray-400">Know exactly where your bus is and when it will arrive.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg text-center">
+                        <span class="material-icons text-teal-400 text-5xl mb-4">notifications_active</span>
+                        <h3 class="text-2xl font-bold mb-2">Instant Alerts</h3>
+                        <p class="text-gray-400">Receive notifications about delays, schedule changes, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img alt="Interior of a modern bus with passengers" class="rounded-lg shadow-lg"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgi3-amtHtQarw0ehytIlERDXoKsoa4_V9rFwHQGaIyG9lSETLUDCNym8UgC4Y-futGXtb-1ThTtS0G2vtkbx_fVAnv6JUCHdwaS_pCTb-7W0fNNstmYCZvhCf4TPh9_yhYezEb_BYxyfblBRFSiYIw1cPd20rVLoLtS5z6hLYLkMZMwMAX19l9wQj-13xnTYAbHut_xdIvrkG63anceyoNEd30pgnxzUG4pGIVGM4N8IiVDR64xFfhJhphJcwGi13FgoZhbljTHg" />
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-4">For Our Passengers</h2>
+                    <p class="text-gray-400 mb-6">Experience a seamless commute with RidePulse. From planning your trip
+                        to boarding the bus, we've got you covered. Track your ride, manage your digital pass, and enjoy
+                        a stress-free journey.</p>
+                    <a class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center"
+                        href="#passenger">
+                        Passenger Login
+                        <span class="material-icons ml-2">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img alt="A bus driver looking at a dashboard screen" class="rounded-lg shadow-lg"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe6Cdr6qRFmuARVWfCleVgzAnhkC3iTf_w9oGv2bOu_sU1TurY2jy0j5UCwJwiA4Zg-WW8UQoSOHcdj823qthq3JxV-VTvFi5uxRGR8NssIfVHayXmb1BDeNzehnzMxr17s4aSIkbYZpppcXWQcd-Gnra67ndtXzKB8CyzZds67EZR-1VlGE2hsFCJNKBV7y5L7_DCG28Pp7WFYo4tQZtrdrgDmkS9PMz5_HmuSdXtR0sKxS4ZKHxYpoNFtKfzH6W-HI3mHNU_o6w" />
+                </div>
+                <div class="md:w-1/2 md:pr-12">
+                    <h2 class="text-3xl font-bold mb-4">For Our Drivers</h2>
+                    <p class="text-gray-400 mb-6">Access all the information you need to make your routes efficient and
+                        your passengers happy. View schedules, get route updates, and communicate easily with the
+                        dispatch center.</p>
+                    <a class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center"
+                        href="#driver">
+                        Driver Login
+                        <span class="material-icons ml-2">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="login-section flex flex-col md:flex-row justify-center items-stretch gap-8">
+                    <div class="login-card bg-gray-900 rounded-lg p-8 w-full md:w-2/5 transition-all duration-300"
+                        id="passenger">
+                        <h2 class="text-3xl font-bold text-center">Passenger</h2>
+                        <p class="text-center text-gray-400 mb-6">Log in to track your next ride.</p>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-400 mb-2" for="passenger-email">Email/Phone No.</label>
+                                <input
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 focus:outline-none focus:border-teal-500"
+                                    id="passenger-email" type="text" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-400 mb-2" for="passenger-password">Password</label>
+                                <input
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 focus:outline-none focus:border-teal-500"
+                                    id="passenger-password" type="password" />
+                            </div>
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="flex items-center">
+                                    <input
+                                        class="h-4 w-4 bg-gray-700 border-gray-600 text-teal-600 focus:ring-teal-500 rounded"
+                                        id="passenger-remember" type="checkbox" />
+                                    <label class="ml-2 text-sm text-gray-400" for="passenger-remember">Remember
+                                        Me</label>
+                                </div>
+                                <a class="text-sm text-gray-400 hover:text-teal-400" href="#">Forgot Password?</a>
+                            </div>
+                            <button
+                                class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg"
+                                type="submit">Log in as Passenger</button>
+                            <p class="text-center text-sm text-gray-400 mt-4">Don't have an account? <a
+                                    class="text-teal-400 hover:text-teal-300" href="#">Sign Up</a></p>
+                        </form>
+                    </div>
+                    <div class="login-card bg-gray-900 rounded-lg p-8 w-full md:w-2/5 transition-all duration-300"
+                        id="driver">
+                        <h2 class="text-3xl font-bold text-center">Driver</h2>
+                        <p class="text-center text-gray-400 mb-6">Log in to start driving and earning.</p>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-400 mb-2" for="driver-email">Email/Phone No.</label>
+                                <input
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 focus:outline-none focus:border-teal-500"
+                                    id="driver-email" type="text" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-400 mb-2" for="driver-password">Password</label>
+                                <input
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 focus:outline-none focus:border-teal-500"
+                                    id="driver-password" type="password" />
+                            </div>
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="flex items-center">
+                                    <input
+                                        class="h-4 w-4 bg-gray-700 border-gray-600 text-teal-600 focus:ring-teal-500 rounded"
+                                        id="driver-remember" type="checkbox" />
+                                    <label class="ml-2 text-sm text-gray-400" for="driver-remember">Remember Me</label>
+                                </div>
+                                <a class="text-sm text-gray-400 hover:text-teal-400" href="#">Forgot Password?</a>
+                            </div>
+                            <button
+                                class="w-full bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg"
+                                type="submit">Log in as Driver</button>
+                            <p class="text-center text-sm text-gray-400 mt-4">Don't have an account? <a
+                                    class="text-teal-400 hover:text-teal-300" href="#">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">RidePulse</div>
+                <div class="text-gray-500">
+                    © 2023 RidePulse. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
